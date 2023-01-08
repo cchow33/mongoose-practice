@@ -8,6 +8,7 @@ const personSchema = new Schema({
   firstName: String,
   lastName: String,
   age: Number,
+  address: addressSchema,
 });
 
 const addressSchema = new Schema ({
@@ -15,3 +16,9 @@ const addressSchema = new Schema ({
   street: String,
   apartment: Number, 
 })
+
+// Defining a model:
+const Person = mongoose.model('Person', personSchema);
+
+// Compiling a model from schema
+const SomeModel = mongoose.model("SomeMode", SomeModelSchema);

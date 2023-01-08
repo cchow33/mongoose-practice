@@ -10,3 +10,8 @@ const personSchema = new Schema({
   age: Number,
 });
 
+const addressSchema = new Schema ({
+  city: String,
+  street: String,
+  apartment: Number, 
+})

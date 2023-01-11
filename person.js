@@ -15,6 +15,7 @@ const addressSchema = new Schema ({
   city: String,
   street: String,
   apartment: Number, 
+  country: String
 })
 
 // Defining a model:
